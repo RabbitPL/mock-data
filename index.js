@@ -7,6 +7,9 @@
 //  服务器入口文件
 const express = require('express');
 const cities = require('./api/cities.json');
+const search = require('./api/search.json');
+const query = require('./api/query.json');
+const trainSeat = require('./api/trainSeat.json');
 
 const app = express();
 
@@ -22,6 +25,18 @@ app.get('/rest/cities', (request, response) => {
         result: cities,
         msg: '数据请求成功'
     });
+});
+
+app.get('/rest/search', (request, response) => {
+    const searchKey = request.query.key;
+    search.dataMap.userInput = searchKey;
+    response.json(search);
+});
+app.get('/rest/query', (request, response) => {
+    response.json(query);
+});
+app.get('/rest/trainSeat', (request, response) => {
+    response.json(trainSeat);
 });
 
 app.listen(3001);

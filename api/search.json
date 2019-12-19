@@ -1,0 +1,17 @@
+{
+  "msg": "操作成功",
+  "status": 0,
+  "dataMap": {
+    "today": "2019-12-16",
+    "userInput": "北京",
+    "result": [
+      {"key": "北京", "display": "北京(beijing)", "type": 3},
+      {"key": "北京南", "display": "北京南(beijingnan)", "type": 3},
+      {"key": "北京西", "display": "北京西(beijingxi)", "type": 3},
+      {"key": "北京东", "display": "北京东(beijingdong)", "type": 3},
+      {"key": "北京大兴", "display": "北京大兴(beijingdaxing)", "type": 3},
+      {"key": "北京北", "display": "北京北(beijingbei)", "type": 3}
+    ],
+    "todayWeekday": "星期一"
+  }
+}
