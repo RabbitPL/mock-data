@@ -1,0 +1,194 @@
+{
+  "code": 0,
+  "stations": [
+    {
+      "stay": "",
+      "index": "1",
+      "station": "北京南",
+      "arriveTime": null,
+      "departTime": "11:55"
+    },
+    {
+      "stay": "2分",
+      "index": "2",
+      "station": "廊坊北",
+      "arriveTime": "12:47",
+      "departTime": "12:49"
+    },
+    {
+      "stay": "2分",
+      "index": "3",
+      "station": "杨村",
+      "arriveTime": "13:13",
+      "departTime": "13:15"
+    },
+    {
+      "stay": "3分",
+      "index": "4",
+      "station": "天津西",
+      "arriveTime": "13:43",
+      "departTime": "13:46"
+    },
+    {
+      "stay": "3分",
+      "index": "5",
+      "station": "静海",
+      "arriveTime": "14:13",
+      "departTime": "14:16"
+    },
+    {
+      "stay": "3分",
+      "index": "6",
+      "station": "青县",
+      "arriveTime": "14:42",
+      "departTime": "14:45"
+    },
+    {
+      "stay": "6分",
+      "index": "7",
+      "station": "沧州",
+      "arriveTime": "15:05",
+      "departTime": "15:11"
+    },
+    {
+      "stay": "3分",
+      "index": "8",
+      "station": "泊头",
+      "arriveTime": "15:35",
+      "departTime": "15:38"
+    },
+    {
+      "stay": "3分",
+      "index": "9",
+      "station": "东光",
+      "arriveTime": "15:52",
+      "departTime": "15:55"
+    },
+    {
+      "stay": "3分",
+      "index": "10",
+      "station": "吴桥",
+      "arriveTime": "16:19",
+      "departTime": "16:22"
+    },
+    {
+      "stay": "3分",
+      "index": "11",
+      "station": "德州",
+      "arriveTime": "16:46",
+      "departTime": "16:49"
+    },
+    {
+      "stay": "7分",
+      "index": "12",
+      "station": "济南",
+      "arriveTime": "18:19",
+      "departTime": "18:26"
+    },
+    {
+      "stay": "3分",
+      "index": "13",
+      "station": "泰山",
+      "arriveTime": "19:18",
+      "departTime": "19:21"
+    },
+    {
+      "stay": "3分",
+      "index": "14",
+      "station": "磁窑",
+      "arriveTime": "19:47",
+      "departTime": "19:50"
+    },
+    {
+      "stay": "3分",
+      "index": "15",
+      "station": "兖州",
+      "arriveTime": "20:25",
+      "departTime": "20:28"
+    },
+    {
+      "stay": "2分",
+      "index": "16",
+      "station": "邹城",
+      "arriveTime": "20:43",
+      "departTime": "20:45"
+    },
+    {
+      "stay": "3分",
+      "index": "17",
+      "station": "滕州",
+      "arriveTime": "21:11",
+      "departTime": "21:14"
+    },
+    {
+      "stay": "3分",
+      "index": "18",
+      "station": "枣庄西",
+      "arriveTime": "21:36",
+      "departTime": "21:39"
+    },
+    {
+      "stay": "19分",
+      "index": "19",
+      "station": "徐州",
+      "arriveTime": "22:38",
+      "departTime": "22:57"
+    },
+    {
+      "stay": "3分",
+      "index": "20",
+      "station": "宿州",
+      "arriveTime": "23:45",
+      "departTime": "23:48"
+    },
+    {
+      "stay": "4分",
+      "index": "21",
+      "station": "蚌埠",
+      "arriveTime": "00:47",
+      "departTime": "00:51"
+    },
+    {
+      "stay": "4分",
+      "index": "22",
+      "station": "滁州北",
+      "arriveTime": "02:09",
+      "departTime": "02:13"
+    },
+    {
+      "stay": "8分",
+      "index": "23",
+      "station": "南京",
+      "arriveTime": "02:57",
+      "departTime": "03:05"
+    },
+    {
+      "stay": "4分",
+      "index": "24",
+      "station": "常州",
+      "arriveTime": "04:25",
+      "departTime": "04:29"
+    },
+    {
+      "stay": "4分",
+      "index": "25",
+      "station": "无锡",
+      "arriveTime": "05:22",
+      "departTime": "05:26"
+    },
+    {
+      "stay": "4分",
+      "index": "26",
+      "station": "苏州",
+      "arriveTime": "05:54",
+      "departTime": "05:58"
+    },
+    {
+      "stay": "",
+      "index": "27",
+      "station": "上海虹桥",
+      "arriveTime": "07:00",
+      "departTime": null
+    }
+  ]
+}

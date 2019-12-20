@@ -6,10 +6,11 @@
 
 //  服务器入口文件
 const express = require('express');
+const dayjs = require('dayjs');
 const cities = require('./api/cities.json');
 const search = require('./api/search.json');
 const query = require('./api/query.json');
-const trainSeat = require('./api/trainSeat.json');
+const schedule = require('./api/schedule.json');
 
 const app = express();
 
@@ -27,6 +28,17 @@ app.get('/rest/cities', (request, response) => {
     });
 });
 
+app.get('/rest/order', (request, response) => {
+    const { date } = request.query;  
+    return response.json({
+        departTimeStr: '07:15',
+        arriveTimeStr: '11:47',
+        arriveDate: dayjs(date).valueOf(),
+        durationStr: '4小时32分',
+        price: 483.5,
+    });
+});
+
 app.get('/rest/search', (request, response) => {
     const searchKey = request.query.key;
     search.dataMap.userInput = searchKey;
@@ -35,8 +47,53 @@ app.get('/rest/search', (request, response) => {
 app.get('/rest/query', (request, response) => {
     response.json(query);
 });
-app.get('/rest/trainSeat', (request, response) => {
-    response.json(trainSeat);
+app.get('/rest/schedule', (request, response) => {
+    response.json(schedule);
+});
+app.get('/rest/ticket', (request, response) => {
+    const { date } = request.query;
+    response.json({
+        detail: {
+            departTimeStr: '07:15',
+            arriveTimeStr: '11:47',
+            arriveDate: new Date(date).getTime(),
+            durationStr: '4小时32分'
+        },
+        candidates: [{
+            type: '二等座',
+            priceMsg: '443.5',
+            ticketsLeft: '有票',
+            channels: [{
+                name: '快速预订',
+                desc: '含40元出行保障 快速出票 迅捷无忧'
+            }, {
+                name: '普通预订',
+                desc: '出票较慢，高峰期需要排队'
+            }]
+        }, {
+            type: '一等座',
+            priceMsg: '748.5',
+            ticketsLeft: '有票',
+            channels: [{
+                name: '快速预订',
+                desc: '含40元出行保障 快速出票 迅捷无忧'
+            }, {
+                name: '普通预订',
+                desc: '出票较慢，高峰期需要排队'
+            }]
+        }, {
+            type: '商务座',
+            priceMsg: '1403.5',
+            ticketsLeft: '5张',
+            channels: [{
+                name: '快速预订',
+                desc: '含40元出行保障 快速出票 迅捷无忧'
+            }, {
+                name: '普通预订',
+                desc: '出票较慢，高峰期需要排队'
+            }]
+        }]
+    });
 });
 
 app.listen(3001);
